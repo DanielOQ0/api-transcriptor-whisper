@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package transcribir;
+
+// Definicion del servicio Greeter
+service Greeter {
+  // Envio de solicitud
+  rpc RouteTranscribir (TranscribirRequest) returns (TranscribirReply) {}
+}
+
+// El mensaje de la solicitud contiene la variable nombre
+message TranscribirRequest {
+  string modelo = 1;
+  int32 tamLote = 2;
+  string tipoComputo = 3;
+  string dispositivo = 4;
+  bytes audio = 5;
+  int32 frecuencia = 6;
+}
+
+// El mensaje de la respuesta contiene el greeting
+message TranscribirReply {
+  bool success = 1;
+  string texto = 2;
+  float tiempo = 3;
+}

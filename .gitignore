@@ -1,4 +1,6 @@
-venv/
+api-env/
+uploads/
+client_example/
 
 __pycache__/
 *.py[cod]
