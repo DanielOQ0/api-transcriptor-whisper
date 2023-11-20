@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package transcribir;
 
-// Definicion del servicio Greeter
+// Definicion del servicio principal - escuchado Greeter
 service Greeter {
   // Envio de solicitud
   rpc RouteTranscribir (TranscribirRequest) returns (TranscribirReply) {}
