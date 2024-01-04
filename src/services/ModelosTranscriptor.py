@@ -1,5 +1,4 @@
 import whisperx
-import os
 
 def transcribirWhisper(nomArchivo, config):
     '''Recibe como parámetro la ruta con el nombre del audio a transcribir y la configuración del whisper.
