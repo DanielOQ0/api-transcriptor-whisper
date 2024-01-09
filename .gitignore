@@ -1,8 +1,10 @@
 api_env/
 uploads/
 client_example/
+*.env
 
 __pycache__/
 *.py[cod]
 
 .pytest_cache/
+
