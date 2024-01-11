@@ -18,7 +18,7 @@ class Greeter(audio_pb2_grpc.GreeterServicer):
         #Proceso de transcripción
         start_time = time.time()
         #transcripcion = transcribirWhisper(nomArchivo, config)
-        transcripcion = transcribirWhisperDirecto(config, request.audio)
+        transcripcion = transcribirWhisperDirecto(config, request)
         end_time = time.time()
         tiempo_transcurrido = end_time - start_time
         #Eliminar archivo
