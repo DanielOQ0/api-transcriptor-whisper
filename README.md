@@ -78,4 +78,4 @@ Para desplegar este proyecto en modo híbrido,  que permite utilizar REST y GRPC
 Para desplegar este proyecto en modo solo GRPC, ejecute (Recomendado)
 
 ```bash
-  pyt
+  python grpcServer.py
