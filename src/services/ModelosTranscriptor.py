@@ -2,7 +2,7 @@ import whisperx
 import numpy as np
 import librosa
 
-modelDefault = whisperx.load_model("small", "cuda", compute_type="float16", language="es")
+modelDefault = whisperx.load_model("medium", "cuda", compute_type="float16", language="es")
 
 
 def transcribirWhisper(nomArchivo, config):
